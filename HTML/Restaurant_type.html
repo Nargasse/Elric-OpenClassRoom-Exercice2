@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Nom_Du_Resto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img src="Logo_OhMyFood">
+        </header>
+
+        <figure>
+            <!--Je ne suis absolument pas convaincu de l'usage d'une figure, la dernière fois que je l'avais fait c'était pas top.
+            Mais peut-être avais-je tord, ça me semble sémantiquement adapté. Alors essayons. Avec le trick du absolute, ça pourrait mieux marcher.-->
+            <img src="Image_Du_Resto" alt="Nom_Du_Plat">
+            <figcaption>
+                <h1>Nom_Du_Resto</h1>
+                <img src="Image de coeur" alt="J'aime">
+            </figcaption>
+        </figure>
+
+        <section id="Menu">
+
+            <!--Est-il sémantiquement correcte de placer à la place une seconde section dans la section ?
+            Ou existe-t'il une autre sémantique permettant d'éviter la multiplication des divs ?-->
+            <div id="Menu__Grande-section">
+                <h2>Entrées</h2>
+                <div class="Menu__Fiche-plat">
+                    <div class=Menu__Plat_Description>
+                        <h3>Poulpe fumée sucrée-salée</h3>
+                        <p>Aux arômes subtils canelle et citron vert</p>
+                    </div>
+                    <div class=Menu__Partie_Coulissante>
+                        <p class="Menu__Prix">20€</p>
+                        <img src="ok" alt="Case cochée" />
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <footer>
+            <img src="Petit_Logo_Blanc">
+            <ul>
+                <li><i src="Courchette"></i>Proposer un restaurant</li>
+                <li><i src="Poignée de main"></i>Devenir partenaire</li>
+                <li>Mentions Légale</li>
+                <li>Contact</li>
+            </ul>
+        </footer>
+    </body>
+
+</html>
