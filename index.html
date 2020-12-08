@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Oh My Food !</title>
+        <meta name="description" content="Site de commande en lien avec des restaurants d'excellence" />
+        <link rel="icon" type="image/png" href="../Images/Icone_Omf.png">
+        <link rel="stylesheet" href="../CSS/style.css"> 
+        <script src="https://kit.fontawesome.com/a3f1cbf15f.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header class="header header--ombre">
+            <h1 class="header__title">ohmyfood</h1>
+            <nav class="recherche-localisation">
+                <div class="recherche-localisation__barre-de-recherche centered-text-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="texte" placeholder="Paris, Belleville" class="recherche-localisation__input">
+                </div>
+                <div class="accroche-visuel centered-text-box">
+                    <h2>Réservez le menu qui vous convient</h2>
+                    <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                    <button class="bouton-action">Explorer nos restaurants</button>
+                </div>
+            </nav>
+        </header>
+
+        <section class="presentation">
+            <h2>Fonctionnement</h2>
+
+            <div class="presentation-etape rounded-box">
+                <p class="presentation-etape__numero">1</p>
+                <p class="presentation-etape__texte"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</p>
+            </div>
+            <div class="presentation-etape rounded-box">
+                <p class="presentation-etape__numero">2</p>
+                <p class="presentation-etape__texte"><i class="fas fa-list-ul"></i>Composez votre menu</p>
+            </div>
+            <div class="presentation-etape presentation-etape--colored rounded-box">
+                <p class="presentation-etape__numero">3</p>
+                <p class="presentation-etape__texte"><i class="fas fa-store"></i>Dégustez au restaurant</p>
+            </div>
+        </section>
+
+        <section id="liste-restaurants">
+            <h2>Restaurants</h2>
+            <a href="Page_Restos/Restaurant_type.html" class="vignette rounded-box rounded-box--image">
+                <img src="../Images/Palette_Gout.jpg" alt="Assiette gastronomique" class=vignette__image>
+                <p class="vignette__nouveau">Nouveau</p>
+                <div class="vignette__texte">
+                    <h3>La Palette du goût</h3>
+                    <p>Ménilmontant</p>
+                    <span class="fa-stack like-coeur">
+                        <i class="far fa-heart fa-stack-1x"></i>
+                        <i class="fas fa-heart like-coeur__full fa-stack-1x"></i>
+                    </span>
+                    
+                </div>
+            </a>
+            <a href="Page_Restos/Restaurant_type.html" class="vignette rounded-box rounded-box--image">
+                <img src="../Images/Note_Enchantee.jpg" alt="Assiette gastronomique" class=vignette__image>
+                <p class="vignette__nouveau">Nouveau</p>
+                <div class="vignette__texte">
+                    <h3>La note enchantée</h3>
+                    <p>Charonne</p>
+                    <span class="fa-stack like-coeur">
+                        <i class="far fa-heart fa-stack-1x"></i>
+                        <i class="fas fa-heart like-coeur__full fa-stack-1x"></i>
+                    </span>
+                </div>
+            </a>
+            <a href="Page_Restos/Restaurant_type.html" class="vignette rounded-box rounded-box--image">
+                <img src="../Images/Ala_Francaise.jpg" alt="Assiette gastronomique" class=vignette__image>
+                <p class="vignette__nouveau--hidden">Nouveau</p>
+                <div class="vignette__texte">
+                    <h3>A la française</h3>
+                    <p>Cité Rouge</p>
+                    <span class="fa-stack like-coeur">
+                        <i class="far fa-heart fa-stack-1x"></i>
+                        <i class="fas fa-heart like-coeur__full fa-stack-1x"></i>
+                    </span>
+                </div>
+            </a>
+            <a href="Page_Restos/Restaurant_type.html" class="vignette rounded-box rounded-box--image">
+                <img src="../Images/Delice_Sens.jpg" alt="Assiette gastronomique" class=vignette__image>
+                <p class="vignette__nouveau--hidden">Nouveau</p>
+                <div class="vignette__texte">
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Méricourt</p>
+                    <span class="fa-stack like-coeur">
+                        <i class="far fa-heart fa-stack-1x"></i>
+                        <i class="fas fa-heart like-coeur__full fa-stack-1x"></i>
+                    </span>
+                </div>
+            </a>
+        </section>
+
+        <footer>
+            <p>ohmyfood</p>
+            <ul>
+                <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+                <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+                <li>Mentions Légale</li>
+                <li>Contact</li>
+            </ul>
+        </footer>
+    </body>
+</html>
