@@ -22,9 +22,8 @@
   font-family: "Shrikhand";
   src: local("Shrikhand-Regular"), url("../Fonts/Shrikhand-Regular.ttf");
 }
-.shrikhand {
-  font-family: "Shrikhand", cursive;
-  font-weight: 400;
+h1, h2, h3, h4, p, li {
+  font-family: "roboto";
 }
 
 .vignette {
@@ -44,8 +43,8 @@
   top: 15px;
   right: 25px;
   background-color: #99E2D0;
-  color: #1b6150;
-  padding: 8px 10px 2px 10px;
+  color: #278870;
+  padding: 4px 10px 2px 10px;
   margin: 0px;
 }
 .vignette__nouveau--hidden {
@@ -60,8 +59,14 @@
   padding: 1em;
   box-sizing: border-box;
 }
-.vignette__texte h2, .vignette__texte p {
+.vignette__texte h3, .vignette__texte p {
   margin: 0px;
+}
+.vignette__texte h3 {
+  font-weight: 700;
+}
+.vignette__texte p {
+  font-weight: 200;
 }
 .vignette__texte img {
   position: absolute;
@@ -70,7 +75,7 @@
 }
 .vignette__texte .like-coeur {
   position: absolute;
-  right: 35px;
+  right: 2%;
   top: 30%;
 }
 .vignette__texte .like-coeur__full {
@@ -84,8 +89,16 @@
 .vignette--banniere-resto {
   margin: 0px;
 }
+.vignette--banniere-resto .vignette__image {
+  height: 100%;
+}
 .vignette--banniere-resto .vignette__texte {
   border-radius: 26px 26px 0px 0px;
+}
+.vignette--banniere-resto h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  margin: 0;
 }
 
 body {
@@ -114,11 +127,21 @@ body {
   border: none;
   padding: 0.8em;
 }
+.bouton-action--commande {
+  margin: 3em auto 5em auto;
+  display: block;
+  padding: 1em 3em;
+  font-weight: 600;
+}
 
 footer {
   background-color: #343434;
   color: white;
   padding: 1.1em;
+}
+footer p {
+  font-family: "shrikhand", cursive;
+  font-weight: 400;
 }
 footer ul {
   padding: 0;
@@ -132,22 +155,20 @@ footer ul i {
 }
 
 .header {
-  position: relative;
+  text-align: center;
 }
-.header__cadre {
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-  margin-bottom: 4px;
-}
-.header__logo {
-  display: block;
+.header__title {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
   margin: auto;
-  width: 175px;
-  height: 30px;
 }
 .header__arrow-left {
   position: absolute;
   left: 1em;
-  top: 30%;
+  top: 1.6em;
+}
+.header p {
+  font-weight: 100;
 }
 
 .menu {
@@ -157,8 +178,9 @@ footer ul i {
   background-color: whitesmoke;
 }
 
-.menu-liste h2 {
+.menu-liste h3 {
   margin: 0 14px;
+  font-family: "roboto";
   font-weight: 100;
 }
 .menu-liste img {
@@ -176,8 +198,14 @@ footer ul i {
 .fiche-plat__texte {
   padding: 0.4em;
 }
-.fiche-plat__texte h3, .fiche-plat__texte p {
-  margin: 0px;
+.fiche-plat__texte h4, .fiche-plat__texte p {
+  margin: 0.3em;
+}
+.fiche-plat__texte h4 {
+  font-weight: 700;
+}
+.fiche-plat__texte p {
+  font-weight: 200;
 }
 .fiche-plat__prix {
   align-self: flex-end;
@@ -214,9 +242,9 @@ footer ul i {
 }
 .presentation-etape__numero {
   margin: 0;
-  height: 1.1em;
+  height: 1.3em;
   width: 1.5em;
-  padding-top: 0.4em;
+  padding-top: 0.2em;
   border-radius: 25px;
   position: absolute;
   left: -8px;
@@ -227,6 +255,7 @@ footer ul i {
 }
 .presentation-etape__texte {
   margin-left: 1em;
+  font-weight: 500;
 }
 .presentation-etape i {
   font-size: 1.4em;
