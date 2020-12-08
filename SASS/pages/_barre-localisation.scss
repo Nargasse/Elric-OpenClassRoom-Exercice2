@@ -1,0 +1,13 @@
+
+.recherche-localisation {
+    background-color: darken(white, 6%);
+    &__barre-de-recherche {
+        background-color: darken(white, 9%);
+    }
+    
+    &__input {
+        width: 10em;
+        border: none;
+        background-color: inherit;
+    }
+}

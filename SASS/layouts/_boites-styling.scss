@@ -1,0 +1,25 @@
+body {
+    margin: 0px;
+}
+
+.rounded-box {
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+    margin: 1em 1.5em;
+    &--image {
+        overflow: hidden;
+    }
+}
+.centered-text-box {
+    padding: 0.7em;
+    text-align: center;
+}
+
+.bouton-action {
+    border-radius: 25px;
+    background-image: linear-gradient($couleur-secondaire, adjust-color($couleur-secondaire, $red: -80, $green: -10));
+    color: white;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
+    border: none;
+    padding: 0.8em;
+}

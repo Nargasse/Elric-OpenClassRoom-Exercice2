@@ -1,0 +1,20 @@
+.header {
+    position: relative;
+    &__cadre {
+        box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+        margin-bottom: 4px;
+    }
+    
+    &__logo {
+        display: block;
+        margin: auto;
+        width: 175px;
+        height: 30px;
+    }
+
+    &__arrow-left {
+        position: absolute;
+        left: 1em;
+        top: 30%;
+    }
+}

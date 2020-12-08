@@ -3,39 +3,72 @@
 <html>
     <head>
         <title>Nom_Du_Resto</title>
+        <meta name="description" content="Site de commande en lien avec des restaurants d'excellence" />
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="../Images/Icone_Omf.png">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="https://kit.fontawesome.com/a3f1cbf15f.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <header>
-            <img src="Logo_OhMyFood">
+        <header class="header centered-text-box">
+            <i class="fas fa-arrow-left header__arrow-left"></i>
+            <img src="../Images/Logo_Header.png" alt="Logo OhMyFood" class="header__logo">
         </header>
 
-        <figure>
-            <!--Je ne suis absolument pas convaincu de l'usage d'une figure, la dernière fois que je l'avais fait c'était pas top.
-            Mais peut-être avais-je tord, ça me semble sémantiquement adapté. Alors essayons. Avec le trick du absolute, ça pourrait mieux marcher.-->
-            <img src="Image_Du_Resto" alt="Nom_Du_Plat">
-            <figcaption>
-                <h1>Nom_Du_Resto</h1>
-                <img src="Image de coeur" alt="J'aime">
-            </figcaption>
-        </figure>
+        <section class="menu">
+    
+            <figure class="vignette vignette--banniere-resto">
+                <img src="../Images/Ala_Francaise.jpg" alt="Velouté de légumes d'antan" class="vignette__image">
+                <figcaption class="vignette__texte">
+                    <h1>A la française</h1>
+                    <span class="fa-stack like-coeur">
+                        <i class="far fa-heart fa-stack-1x"></i>
+                        <i class="fas fa-heart like-coeur__full fa-stack-1x"></i>
+                    </span>
+                </figcaption>
+            </figure>
 
-        <section id="Menu">
-
-            <!--Est-il sémantiquement correcte de placer à la place une seconde section dans la section ?
-            Ou existe-t'il une autre sémantique permettant d'éviter la multiplication des divs ?-->
-            <div id="Menu__Grande-section">
+            <div class="menu-liste">
                 <h2>Entrées</h2>
-                <div class="Menu__Fiche-plat">
-                    <div class=Menu__Plat_Description>
+                <img src="../Images/separateur.png">
+                <div class="fiche-plat rounded-box rounded-box--image">
+                    <div class=fiche-plat__texte>
                         <h3>Poulpe fumée sucrée-salée</h3>
                         <p>Aux arômes subtils canelle et citron vert</p>
                     </div>
-                    <div class=Menu__Partie_Coulissante>
-                        <p class="Menu__Prix">20€</p>
-                        <img src="ok" alt="Case cochée" />
+                    <div class=fiche-plat__coulisse>
+                        <p class="fiche-plat__prix">20€</p>
+                        <div class=fiche-plat__ok>
+                            <i class="fas fa-check-circle fiche-plat__ok"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fiche-plat rounded-box rounded-box--image">
+                    <div class=fiche-plat__texte>
+                        <h3>Poulpe fumée sucrée-salée</h3>
+                        <p>Aux arômes subtils canelle et citron vert</p>
+                    </div>
+                    <div class=fiche-plat__coulisse>
+                        <p class="fiche-plat__prix">20€</p>
+                        <div class=fiche-plat__ok>
+                            <i class="fas fa-check-circle fiche-plat__ok"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fiche-plat rounded-box rounded-box--image">
+                    <div class=fiche-plat__texte>
+                        <h3>Poulpe fumée sucrée-salée</h3>
+                        <p>Aux arômes subtils canelle et citron vert</p>
+                    </div>
+                    <div class=fiche-plat__coulisse>
+                        <p class="fiche-plat__prix">20€</p>
+                        <div class=fiche-plat__ok>
+                            <i class="fas fa-check-circle fiche-plat__ok"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -43,10 +76,10 @@
         </section>
 
         <footer>
-            <img src="Petit_Logo_Blanc">
+            <img src="../Images/Logo_Blanc_Footer.png" alt="Logo OhMyFood">
             <ul>
-                <li><i src="Courchette"></i>Proposer un restaurant</li>
-                <li><i src="Poignée de main"></i>Devenir partenaire</li>
+                <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+                <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
                 <li>Mentions Légale</li>
                 <li>Contact</li>
             </ul>

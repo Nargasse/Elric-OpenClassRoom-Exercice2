@@ -7,107 +7,103 @@
         <title>Oh My Food !</title>
         <meta name="description" content="Site de commande en lien avec des restaurants d'excellence" />
         <link rel="icon" type="image/png" href="../Images/Icone_Omf.png">
+        <link rel="stylesheet" href="../CSS/style.css"> 
         <script src="https://kit.fontawesome.com/a3f1cbf15f.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <header>
-            <!--Le logo sera à mettre, centré et en petite taille. Il faudra calculer les marges de façon à ce que tout soit en ordre.-->
-            <img src="../Images/Logo_Header.png" alt="Logo OhMyFood">
-        
-            <nav>
-                <div>
-                    <!--Cette div va contenir la recherche. Pour pouvoir mette une image à côté d'un input recherche,
-                    on va tricher un peu avec une image légèrement à gauche via un flex et une boîte d'input uniforme.
-                    L'une des questions qui se pose est de prévoir comment centrer l'input et mettre l'image à gauche. Un simple justify : Center ne suffit pas.-->
-                    <img src="LogoGeolocalisation" alt="LogoGeolocalisation">
-                    <!--Notons aussi que je met  pour le moment des images partout, mais il serait probablement plus avisé d'employer à nouveau FontAwesome.
-                    Le passage par une Font permet indéniablement des images de bien meilleure qualité.-->
-                    <input type="texte" placeholder="Paris, Belleville">
-                    <!--Il faudra aussi sans doutes créer un lien avec le bouton Explorer, de manière à pouvoir trouver le titre sur l'envoi.-->
+        <header class="header header--ombre">
+            <div class="header__cadre centered-text-box">
+                <img src="../Images/Logo_Header.png" alt="Logo OhMyFood" class="header__logo">
+            </div>
+            <nav class="recherche-localisation">
+                <div class="recherche-localisation__barre-de-recherche centered-text-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="texte" placeholder="Paris, Belleville" class="recherche-localisation__input">
                 </div>
-                <div>
+                <div class="accroche-visuel centered-text-box">
                     <h2>Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                    <button>Explorer nos restaurants</button>
+                    <button class="bouton-action">Explorer nos restaurants</button>
                 </div>
             </nav>
         </header>
 
-        <section id="Explication_Fonctionnement">
+        <section class="presentation">
             <h2>Fonctionnement</h2>
-            
-            <!--Notons que les boîtes sont grosses, probablement pour un toucher facile.
-            La couleur violette est probablement dû à un :hover, même si pour mobile ça n'a pas grand sens.
-            J'imagine en mettre une en violette de base, avec possibilité de changement sur l'hover. Si le défaut est trop compliqué, on se contentera d'en faire un fixe.
-            Relire la doc pour être sûr de ce qui est attendu ici. -->
 
-            <div>
-                <img src="1" alt="Etape une" class="Numero_Etape">
-                <img src="Mobile" alt="Mobile" class="Illustration_Etape">
-                <p>Choisissez un restaurant</p>
+            <div class="presentation-etape rounded-box">
+                <p class="presentation-etape__numero">1</p>
+                <p class="presentation-etape__texte"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</p>
             </div>
-            <div>
-                <img src="2" alt="Etape deux" class="Numero_Etape">
-                <img src="Menu" alt="Menu de sélection" class="Illustration_Etape">
-                <p>Composez votre menu</p>
+            <div class="presentation-etape rounded-box">
+                <p class="presentation-etape__numero">2</p>
+                <p class="presentation-etape__texte"><i class="fas fa-list-ul"></i>Composez votre menu</p>
             </div>
-            <div>
-                <img src="3" alt="Etape une" class="Numero_Etape">
-                <img src="Mobile" alt="Mobile" class="Illustration_Etape">
-                <p>Dégustez au restaurant</p>
+            <div class="presentation-etape presentation-etape--colored rounded-box">
+                <p class="presentation-etape__numero">3</p>
+                <p class="presentation-etape__texte"><i class="fas fa-store"></i>Dégustez au restaurant</p>
             </div>
         </section>
 
-        <section>
+        <section id="liste-restaurants">
             <h2>Restaurants</h2>
-            <a class="Vignette_Restaurant_Groupe">
-                <div class="Vignette_Resto_Image">
-                    <img src="../Images/Palette_Gout.jpg" alt="Assiette gastronomique">
-                </div>
-                <div class="Vignette_Resto_Texte">
+            <a class="vignette rounded-box rounded-box--image">
+                <img src="../Images/Palette_Gout.jpg" alt="Assiette gastronomique" class=vignette__image>
+                <p class="vignette__nouveau">Nouveau</p>
+                <div class="vignette__texte">
                     <h2>La Palette du goût</h2>
                     <p>Ménilmontant</p>
-                    <img src="Coeur">
+                    <span class="fa-stack like-coeur">
+                        <i class="far fa-heart fa-stack-1x"></i>
+                        <i class="fas fa-heart like-coeur__full fa-stack-1x"></i>
+                    </span>
+                    
                 </div>
             </a>
-            <a class="Vignette_Restaurant_Groupe">
-                <div class="Vignette_Resto_Image">
-                    <img src="../Images/Note_Enchantee.jpg" alt="Assiette gastronomique">
-                </div>
-                <div class="Vignette_Resto_Texte">
+            <a class="vignette rounded-box rounded-box--image">
+                <img src="../Images/Note_Enchantee.jpg" alt="Assiette gastronomique" class=vignette__image>
+                <p class="vignette__nouveau">Nouveau</p>
+                <div class="vignette__texte">
                     <h2>La note enchantée</h2>
                     <p>Charonne</p>
-                    <img src="Coeur">
+                    <span class="fa-stack like-coeur">
+                        <i class="far fa-heart fa-stack-1x"></i>
+                        <i class="fas fa-heart like-coeur__full fa-stack-1x"></i>
+                    </span>
                 </div>
             </a>
-            <a class="Vignette_Restaurant_Groupe">
-                <div class="Vignette_Resto_Image">
-                    <img src="../Images/Ala_Francaise.jpg" alt="Assiette gastronomique">
-                </div>
-                <div class="Vignette_Resto_Texte">
+            <a class="vignette rounded-box rounded-box--image">
+                <img src="../Images/Ala_Francaise.jpg" alt="Assiette gastronomique" class=vignette__image>
+                <p class="vignette__nouveau--hidden">Nouveau</p>
+                <div class="vignette__texte">
                     <h2>A la française</h2>
                     <p>Cité Rouge</p>
-                    <img src="Coeur">
+                    <span class="fa-stack like-coeur">
+                        <i class="far fa-heart fa-stack-1x"></i>
+                        <i class="fas fa-heart like-coeur__full fa-stack-1x"></i>
+                    </span>
                 </div>
             </a>
-            <a class="Vignette_Restaurant_Groupe">
-                <div class="Vignette_Resto_Image">
-                    <img src="../Images/Delice_Sens.jpg" alt="Assiette gastronomique">
-                </div>
-                <div class="Vignette_Resto_Texte">
+            <a class="vignette rounded-box rounded-box--image">
+                <img src="../Images/Delice_Sens.jpg" alt="Assiette gastronomique" class=vignette__image>
+                <p class="vignette__nouveau--hidden">Nouveau</p>
+                <div class="vignette__texte">
                     <h2>Le délice des sens</h2>
                     <p>Folie-Méricourt</p>
-                    <img src="Coeur">
+                    <span class="fa-stack like-coeur">
+                        <i class="far fa-heart fa-stack-1x"></i>
+                        <i class="fas fa-heart like-coeur__full fa-stack-1x"></i>
+                    </span>
                 </div>
             </a>
         </section>
 
         <footer>
-            <img src="../Images/Logo_Blanc_Footer.jpg" alt="Logo OhMyFood">
+            <img src="../Images/Logo_Blanc_Footer.png" alt="Logo OhMyFood">
             <ul>
-                <li><i src="Courchette"></i>Proposer un restaurant</li>
-                <li><i src="Poignée de main"></i>Devenir partenaire</li>
+                <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+                <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
                 <li>Mentions Légale</li>
                 <li>Contact</li>
             </ul>

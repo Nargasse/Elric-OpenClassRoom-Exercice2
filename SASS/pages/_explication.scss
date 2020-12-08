@@ -1,0 +1,40 @@
+.presentation {
+    
+    &-etape
+    {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        background-color: darken(white, 3%);
+        &__numero {
+            margin: 0;
+            height: 1.1em;
+            width: 1.5em;
+            padding-top: 0.4em;
+            border-radius:25px;
+            position: absolute;
+            left: -8px;
+            top: 30%;
+            background-color: $couleur-primaire;
+            color: white;
+            text-align: center;
+        }
+
+        &__texte {
+            margin-left: 1em;
+        }
+
+        i {
+            font-size: 1.4em;
+            color: gray;
+            margin-right: 1em;
+        }
+
+        &--colored {
+            background-color: lighten($couleur-primaire, 35%);
+            i {
+                color: $couleur-primaire;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.menu {
+    background-color: darken(white, 4%);
+
+    .vignette__texte {
+        background-color: darken(white, 4%);
+    }
+}
+
+.menu-liste {
+    h2 {
+        margin: 0 14px;
+        font-weight: 100;
+    }
+    img {
+        width: 2em;
+        height: 2px;
+        margin: 0 14px;
+    }
+}
+
+.fiche-plat {
+    display: flex;
+    justify-content: space-between;
+    margin: 14px 0.7em;
+    background-color: white;
+
+    &__texte {
+        padding: 0.4em;
+        h3, p {
+            margin: 0px;
+        }
+    }
+
+    &__prix {
+        align-self: flex-end;
+        padding: 0.5em;
+    }
+
+    &__coulisse {
+        display: flex;
+        position: relative;
+        right: -56px;
+        transition: right 400ms, transform 500ms;
+        &:hover {
+            right: 0px;
+        }
+    }
+
+    &__ok {
+        background-color: $couleur-tertiaire;
+        width: 55px;
+        text-align: center;
+        position: relative;
+        height: 100%;
+        i {
+            position: absolute;
+            right: 0;
+            top: 40%;
+            color: white;
+        }
+    }
+    
+}
