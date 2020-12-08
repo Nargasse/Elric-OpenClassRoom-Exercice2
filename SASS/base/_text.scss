@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "roboto";
+    src: local('Roboto-Thin'),
+         url("../Fonts/Roboto-Thin.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: local('Roboto-Light'),
+         url("../Fonts/Roboto-Light.ttf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: local('Roboto-Regular'),
+         url("../Fonts/Roboto-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: local('Roboto-Medium'),
+         url("../Fonts/Roboto-Medium.ttf");
+    font-weight: 500
+}
+
+@font-face {
+    font-family: "Shrikhand";
+    src: local('Shrikhand-Regular'),
+         url("../Fonts/Shrikhand-Regular.ttf");
+}
+
+.shrikhand {
+    font-family: "Shrikhand", cursive;
+    font-weight: 400;
+}
