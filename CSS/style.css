@@ -22,6 +22,16 @@
   font-family: "Shrikhand";
   src: local("Shrikhand-Regular"), url("../Fonts/Shrikhand-Regular.ttf");
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 h1, h2, h3, h4, p, li {
   font-family: "roboto";
 }
@@ -128,7 +138,7 @@ body {
   padding: 0.8em;
 }
 .bouton-action--commande {
-  margin: 3em auto 5em auto;
+  margin: 3em auto 0 auto;
   display: block;
   padding: 1em 3em;
   font-weight: 600;
@@ -173,6 +183,7 @@ footer ul i {
 
 .menu {
   background-color: whitesmoke;
+  padding-bottom: 4em;
 }
 .menu .vignette__texte {
   background-color: whitesmoke;
@@ -211,14 +222,17 @@ footer ul i {
   align-self: flex-end;
   padding: 0.5em;
 }
+.fiche-plat:hover > .fiche-plat__coulisse {
+  right: 0px;
+}
+.fiche-plat:hover > .fiche-plat__coulisse i {
+  transform: rotate(1turn);
+}
 .fiche-plat__coulisse {
   display: flex;
   position: relative;
   right: -56px;
-  transition: right 400ms, transform 500ms;
-}
-.fiche-plat__coulisse:hover {
-  right: 0px;
+  transition: right 400ms;
 }
 .fiche-plat__ok {
   background-color: #99E2D0;
@@ -226,12 +240,19 @@ footer ul i {
   text-align: center;
   position: relative;
   height: 100%;
+  display: flex;
 }
 .fiche-plat__ok i {
   position: absolute;
-  right: 0;
+  right: 40%;
   top: 40%;
+  width: 20px;
+  height: 20px;
   color: white;
+  transition: transform 300ms ease-in;
+  transform: rotate(0.5turn);
+  margin: auto;
+  font-size: 1.4em;
 }
 
 .presentation-etape {
