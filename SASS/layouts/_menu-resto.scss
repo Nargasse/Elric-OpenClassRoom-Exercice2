@@ -1,8 +1,8 @@
 .menu {
-    background-color: darken(white, 4%);
+    background-color: darken($couleur-neutre, 4%);
     padding-bottom: 4em;
     .vignette__texte {
-        background-color: darken(white, 4%);
+        background-color: darken($couleur-neutre, 4%);
     }
 }
 
@@ -17,16 +17,28 @@
         height: 2px;
         margin: 0 14px;
     }
+    div:nth-of-type(1) {
+        animation: fading 1252ms 123ms backwards;
+    }
+    div:nth-of-type(2) {
+        animation: fading 1341ms 205ms backwards;
+    }
+    div:nth-of-type(3) {
+        animation: fading 986ms 424ms backwards;
+    }
 }
 
 .fiche-plat {
     display: flex;
     justify-content: space-between;
     margin: 14px 0.7em;
-    background-color: white;
+    background-color: $couleur-neutre;
+    position: relative;
+    
 
     &__texte {
         padding: 0.4em;
+        margin-right: 30px;
         h4, p {
             margin: 0.3em;
         }
@@ -41,7 +53,6 @@
     }
 
     &__prix {
-        align-self: flex-end;
         padding: 0.5em;
     }
 
@@ -54,26 +65,21 @@
 
     &__coulisse {
         display: flex;
-        position: relative;
+        position: absolute;
         right: -56px;
         transition: right 400ms;
-
+        background-color: $couleur-neutre;
+        height: 100%;
     }
 
     &__ok {
         background-color: $couleur-tertiaire;
         width: 55px;
-        text-align: center;
-        position: relative;
-        height: 100%;
         display: flex;
         i {
-            position: absolute;
-            right: 40%;
-            top: 40%;
             width: 20px;
             height: 20px;
-            color: white;
+            color: $couleur-neutre;
             transition: transform 300ms ease-in;
             transform: rotate(0.5turn);
             margin: auto;

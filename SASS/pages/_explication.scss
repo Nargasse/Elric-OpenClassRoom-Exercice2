@@ -5,7 +5,7 @@
         display: flex;
         position: relative;
         justify-content: center;
-        background-color: darken(white, 3%);
+        background-color: darken($couleur-neutre, 3%);
         &__numero {
             margin: 0;
             height: 1.3em;
@@ -16,7 +16,7 @@
             left: -8px;
             top: 30%;
             background-color: $couleur-primaire;
-            color: white;
+            color: $couleur-neutre;
             text-align: center;
         }
 

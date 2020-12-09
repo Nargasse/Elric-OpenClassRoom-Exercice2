@@ -1,3 +1,27 @@
+@keyframes fading {
+  0%, 12% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@keyframes loader-spin {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@keyframes disparition {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
 @font-face {
   font-family: "roboto";
   src: local("Roboto-Thin"), url("../Fonts/Roboto-Thin.ttf");
@@ -34,6 +58,28 @@ a:visited {
 
 h1, h2, h3, h4, p, li {
   font-family: "roboto";
+}
+
+.loader {
+  background-color: rgba(50, 176, 145, 0.4);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: disparition 0ms 2800ms forwards;
+  padding-top: 10vh;
+  z-index: 1;
+}
+.loader img {
+  height: 60%;
+  animation: loader-spin 1200ms 2 backwards;
+  display: block;
+  margin: auto;
+}
+.loader p {
+  font-size: 3em;
+  text-align: center;
 }
 
 .vignette {
@@ -199,15 +245,26 @@ footer ul i {
   height: 2px;
   margin: 0 14px;
 }
+.menu-liste div:nth-of-type(1) {
+  animation: fading 1252ms 123ms backwards;
+}
+.menu-liste div:nth-of-type(2) {
+  animation: fading 1341ms 205ms backwards;
+}
+.menu-liste div:nth-of-type(3) {
+  animation: fading 986ms 424ms backwards;
+}
 
 .fiche-plat {
   display: flex;
   justify-content: space-between;
   margin: 14px 0.7em;
   background-color: white;
+  position: relative;
 }
 .fiche-plat__texte {
   padding: 0.4em;
+  margin-right: 30px;
 }
 .fiche-plat__texte h4, .fiche-plat__texte p {
   margin: 0.3em;
@@ -219,7 +276,6 @@ footer ul i {
   font-weight: 200;
 }
 .fiche-plat__prix {
-  align-self: flex-end;
   padding: 0.5em;
 }
 .fiche-plat:hover > .fiche-plat__coulisse {
@@ -230,22 +286,18 @@ footer ul i {
 }
 .fiche-plat__coulisse {
   display: flex;
-  position: relative;
+  position: absolute;
   right: -56px;
   transition: right 400ms;
+  background-color: white;
+  height: 100%;
 }
 .fiche-plat__ok {
   background-color: #99E2D0;
   width: 55px;
-  text-align: center;
-  position: relative;
-  height: 100%;
   display: flex;
 }
 .fiche-plat__ok i {
-  position: absolute;
-  right: 40%;
-  top: 40%;
   width: 20px;
   height: 20px;
   color: white;
