@@ -132,7 +132,8 @@ h1, h2, h3, h4, p, li {
 .vignette__texte .like-coeur {
   position: absolute;
   right: 2%;
-  top: 30%;
+  top: 15%;
+  font-size: 1.5em;
 }
 .vignette__texte .like-coeur__full {
   transform: scale(0);
@@ -144,9 +145,10 @@ h1, h2, h3, h4, p, li {
 }
 .vignette--banniere-resto {
   margin: 0px;
+  height: 330px;
 }
 .vignette--banniere-resto .vignette__image {
-  height: 100%;
+  height: 90%;
 }
 .vignette--banniere-resto .vignette__texte {
   border-radius: 26px 26px 0px 0px;
@@ -198,6 +200,8 @@ footer {
 footer p {
   font-family: "shrikhand", cursive;
   font-weight: 400;
+  font-size: 1.2em;
+  margin-top: 0;
 }
 footer ul {
   padding: 0;
@@ -244,6 +248,8 @@ footer ul i {
   width: 2em;
   height: 2px;
   margin: 0 14px;
+  position: relative;
+  top: -6px;
 }
 .menu-liste div:nth-of-type(1) {
   animation: fading 1252ms 123ms backwards;
