@@ -18,6 +18,7 @@
     color: darken($couleur-tertiaire, 40%);
     padding: 4px 10px 2px 10px;
     margin: 0px;
+    border-radius: 4px;
     &--hidden {
         display: none;
     }
@@ -62,8 +63,19 @@
             color: $couleur-primaire;
         }
 
-        &:hover >.like-coeur__full {
+        &__empty {
             transform: scale(1);
+            transition: transform 700ms;
+        }
+
+        &:hover {
+            .like-coeur__full {
+                transform: scale(1);
+            }
+
+            .like-coeur__empty {
+                transform: scale(0.8);
+            }    
         }
     }
 }

@@ -8,9 +8,19 @@
 
 .menu-liste {
     h3 {
-        margin: 0 14px;
+        margin: 5px 14px;
         font-family: "roboto";
         font-weight: 100;
+        position: relative;
+    }
+    h3::before {
+        content: "";
+        position: absolute;
+        bottom: -5px;        
+        left: 0px;
+        width: 2.5em;
+        height: 3px;
+        background-color: $couleur-tertiaire;
     }
     img {
         width: 2em;
@@ -35,14 +45,17 @@
     justify-content: space-between;
     margin: 14px 0.7em;
     background-color: $couleur-neutre;
-    position: relative;
-    
+    height: 4em;
 
     &__texte {
         padding: 0.4em;
-        margin-right: 30px;
+        overflow: hidden;
+        width: 90%;
         h4, p {
             margin: 0.3em;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
 
         h4 {
@@ -59,31 +72,32 @@
     }
 
     &:hover > .fiche-plat__coulisse {
-        right: 0px;
+        .fiche-plat__ok {
+            width: 55px;
+        }
         i {
-            transform: rotate(1turn);
+            transform: translateX(0) rotate(1turn);
         }
     }
 
     &__coulisse {
         display: flex;
-        position: absolute;
-        right: -56px;
-        transition: right 400ms;
         background-color: $couleur-neutre;
         height: 100%;
     }
 
     &__ok {
         background-color: $couleur-tertiaire;
-        width: 55px;
         display: flex;
+        width: 0px;
+        transition: width 600ms;
+        text-align: center;
         i {
             width: 20px;
             height: 20px;
             color: $couleur-neutre;
-            transition: transform 300ms ease-in;
-            transform: rotate(0.5turn);
+            transition: transform 400ms ease-out;
+            transform: translateX(55px) rotate(0turn);
             margin: auto;
             font-size: 1.4em;
         }

@@ -60,6 +60,10 @@ h1, h2, h3, h4, p, li {
   font-family: "roboto";
 }
 
+h2 {
+  margin-left: 10px;
+}
+
 .loader {
   background-color: rgba(50, 176, 145, 0.4);
   width: 100%;
@@ -102,6 +106,7 @@ h1, h2, h3, h4, p, li {
   color: #278870;
   padding: 4px 10px 2px 10px;
   margin: 0px;
+  border-radius: 4px;
 }
 .vignette__nouveau--hidden {
   display: none;
@@ -140,8 +145,15 @@ h1, h2, h3, h4, p, li {
   transition: transform 500ms;
   color: #9356DC;
 }
-.vignette__texte .like-coeur:hover > .like-coeur__full {
+.vignette__texte .like-coeur__empty {
   transform: scale(1);
+  transition: transform 700ms;
+}
+.vignette__texte .like-coeur:hover .like-coeur__full {
+  transform: scale(1);
+}
+.vignette__texte .like-coeur:hover .like-coeur__empty {
+  transform: scale(0.8);
 }
 .vignette--banniere-resto {
   margin: 0px;
@@ -181,7 +193,7 @@ body {
   border-radius: 25px;
   background-image: linear-gradient(#FF79DA, #af6fda);
   color: white;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   border: none;
   padding: 0.8em;
 }
@@ -190,6 +202,10 @@ body {
   display: block;
   padding: 1em 3em;
   font-weight: 600;
+}
+.bouton-action:hover {
+  background-image: linear-gradient(#ff83dd, #b477dc);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 footer {
@@ -240,9 +256,19 @@ footer ul i {
 }
 
 .menu-liste h3 {
-  margin: 0 14px;
+  margin: 5px 14px;
   font-family: "roboto";
   font-weight: 100;
+  position: relative;
+}
+.menu-liste h3::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  width: 2.5em;
+  height: 3px;
+  background-color: #99E2D0;
 }
 .menu-liste img {
   width: 2em;
@@ -266,14 +292,18 @@ footer ul i {
   justify-content: space-between;
   margin: 14px 0.7em;
   background-color: white;
-  position: relative;
+  height: 4em;
 }
 .fiche-plat__texte {
   padding: 0.4em;
-  margin-right: 30px;
+  overflow: hidden;
+  width: 90%;
 }
 .fiche-plat__texte h4, .fiche-plat__texte p {
   margin: 0.3em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .fiche-plat__texte h4 {
   font-weight: 700;
@@ -284,31 +314,30 @@ footer ul i {
 .fiche-plat__prix {
   padding: 0.5em;
 }
-.fiche-plat:hover > .fiche-plat__coulisse {
-  right: 0px;
+.fiche-plat:hover > .fiche-plat__coulisse .fiche-plat__ok {
+  width: 55px;
 }
 .fiche-plat:hover > .fiche-plat__coulisse i {
-  transform: rotate(1turn);
+  transform: translateX(0) rotate(1turn);
 }
 .fiche-plat__coulisse {
   display: flex;
-  position: absolute;
-  right: -56px;
-  transition: right 400ms;
   background-color: white;
   height: 100%;
 }
 .fiche-plat__ok {
   background-color: #99E2D0;
-  width: 55px;
   display: flex;
+  width: 0px;
+  transition: width 600ms;
+  text-align: center;
 }
 .fiche-plat__ok i {
   width: 20px;
   height: 20px;
   color: white;
-  transition: transform 300ms ease-in;
-  transform: rotate(0.5turn);
+  transition: transform 400ms ease-out;
+  transform: translateX(55px) rotate(0turn);
   margin: auto;
   font-size: 1.4em;
 }
