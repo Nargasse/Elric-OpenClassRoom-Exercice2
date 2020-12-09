@@ -16,6 +16,8 @@
         width: 2em;
         height: 2px;
         margin: 0 14px;
+        position: relative;
+        top: -6px;
     }
     div:nth-of-type(1) {
         animation: fading 1252ms 123ms backwards;
