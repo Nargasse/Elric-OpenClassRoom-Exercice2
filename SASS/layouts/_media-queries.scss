@@ -1,0 +1,27 @@
+@media all and (min-width: 800px) {
+    h2 {
+        text-align: center;
+    }
+    
+    .liste-restaurants__flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .vignette {
+            width: 40%;
+            height: 400px;
+        }
+    }
+
+    .vignette--banniere-resto {
+        height: 40vh;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .menu-liste {
+        width: 80%;
+        min-width: 400px;
+        margin: auto;
+    }
+}

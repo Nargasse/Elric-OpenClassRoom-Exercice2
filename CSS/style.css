@@ -213,7 +213,7 @@ footer {
   color: white;
   padding: 1.1em;
 }
-footer p {
+footer h2 {
   font-family: "shrikhand", cursive;
   font-weight: 400;
   font-size: 1.2em;
@@ -232,6 +232,7 @@ footer ul i {
 
 .header {
   text-align: center;
+  padding: 0;
 }
 .header__title {
   font-family: "Shrikhand", cursive;
@@ -342,6 +343,33 @@ footer ul i {
   font-size: 1.4em;
 }
 
+@media all and (min-width: 800px) {
+  h2 {
+    text-align: center;
+  }
+
+  .liste-restaurants__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .liste-restaurants__flex .vignette {
+    width: 40%;
+    height: 400px;
+  }
+
+  .vignette--banniere-resto {
+    height: 40vh;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .menu-liste {
+    width: 80%;
+    min-width: 400px;
+    margin: auto;
+  }
+}
 .presentation-etape {
   display: flex;
   position: relative;
