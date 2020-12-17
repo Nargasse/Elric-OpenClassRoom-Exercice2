@@ -319,7 +319,7 @@ footer ul i {
   width: 55px;
 }
 .fiche-plat:hover > .fiche-plat__coulisse i {
-  transform: translateX(0) rotate(1turn);
+  transform: translateX(0) rotate(2turn);
 }
 .fiche-plat__coulisse {
   display: flex;
