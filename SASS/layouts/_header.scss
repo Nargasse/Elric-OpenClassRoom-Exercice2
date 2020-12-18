@@ -6,17 +6,16 @@
         font-family: "Shrikhand", cursive;
         font-weight: 400;
         margin: auto;
+        &--ombre {
+            margin-bottom: 5px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+        }
     }
     
     &__arrow-left {
         position: absolute;
         left: 1em;
         top: 1em;
-    }
-
-    &--ombre {
-        margin-bottom: 5px;
-        box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
     }
 
     p {

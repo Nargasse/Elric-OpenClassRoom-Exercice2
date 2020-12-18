@@ -239,14 +239,14 @@ footer ul i {
   font-weight: 400;
   margin: auto;
 }
+.header__title--ombre {
+  margin-bottom: 5px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
 .header__arrow-left {
   position: absolute;
   left: 1em;
   top: 1em;
-}
-.header--ombre {
-  margin-bottom: 5px;
-  box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.3);
 }
 .header p {
   font-weight: 100;
