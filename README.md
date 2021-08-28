@@ -1,6 +1,6 @@
 Intégration d'une page web dynamique
 
-Exercice fait dans le cadre de mon parcours Open Class Room.0
+Exercice fait dans le cadre de mon parcours Open Class Room.
 
 Une maquette, fournie par un graphiste, devait ici être transformé en site web fonctionnelle avec plusieurs pages et des liens fonctionnels entre elles, uniquement en employant uniquement HTML et CSS. Quelques animations devaient ensuite être ajoutés, selon les suggestions du client. Quelques unes des maquettes fournies peuvent êtres consultés en bas de ce Readme.
 
