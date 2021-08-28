@@ -1,4 +1,4 @@
-Intégration d'une page web dynamique
+#Intégration d'une page web dynamique
 
 Exercice fait dans le cadre de mon parcours Open Class Room.
 
@@ -11,3 +11,6 @@ L'arrivé sur la page d'accueil s'accompagne d'un écran de chargement qui tourn
 J'ai aussi fait un travail, conformément aux demandes, sur divers types d'animations. Une animation du coeur en bas des images, qui s'active pour le moment au passage de la souris pour démonstration, une apparition progressive et stylisé des éléments du menu au moment de l'arrivé sur l'une des pages du restaurant, et une animation au passage de la souris sur l'un des plats du menu, qui servira à signaler que le plat à déjà été prit.
 
 Le lien contact du footer doit amène sur la boîte mail avec une adresse fictive.
+
+![Accueil](https://user-images.githubusercontent.com/7791981/131217596-8cd14854-8a91-4ada-94ef-b40dcd339cf7.png)
+https://user-images.githubusercontent.com/7791981/131217622-3e97f711-51dc-481e-8a93-c58c00a264b8.mp4
