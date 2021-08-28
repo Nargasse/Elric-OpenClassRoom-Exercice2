@@ -13,4 +13,5 @@ J'ai aussi fait un travail, conformément aux demandes, sur divers types d'anima
 Le lien contact du footer doit amène sur la boîte mail avec une adresse fictive.
 
 ![Accueil](https://user-images.githubusercontent.com/7791981/131217596-8cd14854-8a91-4ada-94ef-b40dcd339cf7.png)
+
 https://user-images.githubusercontent.com/7791981/131217622-3e97f711-51dc-481e-8a93-c58c00a264b8.mp4
